@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dlaczego trawa jest zielona?</title>
+  <style>
+    :root{ --bg:#f6fff9; --card:#ffffff; --accent:#2b8a3e; --muted:#51606a }
+    body{ font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,#e8f7ea 0%,var(--bg) 60%); color:#0b2b18 }
+    .wrap{max-width:900px;margin:48px auto;padding:28px}
+    header{display:flex;gap:18px;align-items:center}
+    h1{margin:0;font-size:28px;color:var(--accent)}
+    p.lead{margin:6px 0 18px;color:var(--muted)}
+    .card{background:var(--card);border-radius:14px;padding:20px;box-shadow:0 6px 18px rgba(11,43,24,0.06)}
+    section{margin-top:18px}
+    h2{color:#154b2a;margin-top:0}
+    ul{line-height:1.6}
+    .diagram{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+    .svg-wrap{flex:1 1 260px;min-width:240px}
+    svg{width:100%;height:auto;border-radius:10px;background:linear-gradient(180deg,#ffffff,#f0fff5);padding:12px}
+    .footer{margin-top:22px;font-size:13px;color:var(--muted)}
+    .hint{font-size:13px;color:#2f6f3d;background:#eaf7ec;padding:8px;border-radius:8px}
+    @media (max-width:540px){ .wrap{margin:20px;padding:16px} h1{font-size:22px} }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div style="width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#9be48b,#2b8a3e);display:flex;align-items:center;justify-content:center;color:white;font-weight:700">T</div>
+      <div>
+        <h1>Dlaczego trawa jest zielona?</h1>
+        <p class="lead">jak działa zielony kolor i dlaczego rośliny go „wybierają”.</p>
+      </div>
+    </header>
+
+    <article class="card">
+      <section>
+        <h2>Najprościej</h2>
+        <p>Liście trawy i innych roślin zawierają barwnik zwany <strong>chlorofilem</strong>. Chlorofil pochłania światło słoneczne — głównie czerwone i niebieskie długości fal — a <em>odbija</em> lub przepuszcza długości fali zielone. To sprawia, że nasze oczy widzą liście jako zielone.</p>
+      </section>
+
+      <section>
+        <h2>Co robi chlorofil?</h2>
+        <ul>
+          <li><strong>Pochłanianie energii:</strong> Chlorofil wychwytuje energię świetlną potrzebną do <em>fotosyntezy</em>.</li>
+          <li><strong>Fotosynteza:</strong> Dzięki energii świetlnej roślina przekształca dwutlenek węgla (CO₂) i wodę (H₂O) w cukry i tlen (O₂).</li>
+          <li><strong>Dlaczego zielony:</strong> Chlorofil ma strukturę chemiczną, która efektywnie absorbuje niebieskie i czerwone światło, a słabiej absorbuje zielone — dlatego ten kolor dominuje w świetle odbitym.</li>
+        </ul>
+      </section>
+
+      <section class="diagram">
+        <div class="svg-wrap">
+          <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#9be48b"/><stop offset="1" stop-color="#2b8a3e"/></linearGradient>
+            </defs>
+            <rect x="12" y="12" width="576" height="336" rx="12" fill="#ffffff" stroke="#e6f6ea"/>
+            <g transform="translate(40,40)">
+              <rect x="0" y="0" width="240" height="120" rx="10" fill="#f5fff8" stroke="#dff2e6"/>
+              <text x="20" y="26" font-size="14" fill="#154b2a">Światło słoneczne</text>
+              <g transform="translate(18,36)">
+                <rect x="0" y="0" width="200" height="12" rx="6" fill="#ffe9d6"/>
+                <text x="6" y="9" font-size="11" fill="#7a4a2a">niebieskie → absorpcja</text>
+              </g>
+              <g transform="translate(18,58)">
+                <rect x="0" y="0" width="200" height="12" rx="6" fill="#ffdfe7"/>
+                <text x="6" y="9" font-size="11" fill="#7a2a49">czerwone → absorpcja</text>
+              </g>
+              <g transform="translate(18,80)">
+                <rect x="0" y="0" width="200" height="12" rx="6" fill="#e6fff0"/>
+                <text x="6" y="9" font-size="11" fill="#1e6b3a">zielone → odbicie</text>
+              </g>
+            </g>
+
+            <g transform="translate(320,40)">
+              <rect x="0" y="0" width="200" height="160" rx="10" fill="#f9fff9" stroke="#e8f8ea"/>
+              <text x="20" y="28" font-size="14" fill="#154b2a">Chlorofil w liściu</text>
+              <circle cx="100" cy="92" r="30" fill="url(#g1)"/>
+              <text x="58" y="100" font-size="11" fill="#063117">chlorofil</text>
+            </g>
+
+            <g transform="translate(40,190)">
+              <text x="0" y="18" font-size="13" fill="#154b2a">Skutek dla oka:</text>
+              <text x="0" y="40" font-size="12" fill="#2b6b3f">Ponieważ zielone fale są mniej pochłaniane, trafiają do naszych oczu i widzimy trawę jako zieloną.</text>
+            </g>
+          </svg>
+        </div>
+
+        <div style="flex:1 1 300px;min-width:220px">
+          <h3>Krótka animacja myślowa</h3>
+          <p>Napisz sobie w myśli: <em>światło pada → chlorofil wyciąga energię → zielone odbija się → twoje oko rejestruje zieleń</em>. To pomaga zapamiętać sekwencję.</p>
+
+          <div class="hint">Uwaga: inne pigmenty (karotenoidy, antocyjany) mogą zmieniać kolor liści — stąd żółta i czerwona jesień.</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Dlaczego większość roślin jest zielona?</h2>
+        <p>Chlorofil jest bardzo efektywny w roli „panelu słonecznego” dla roślin. Ewolucyjnie rośliny wykorzystały pigmenty, które dobrze pochłaniają dostępne spektrum słoneczne i jednocześnie są stabilne w komórkach. To naturalnie doprowadziło do tego, że zielony stał się dominującym kolorem liści.</p>
+      </section>
+
+      <section>
+        <h2>Co jeszcze warto wiedzieć?</h2>
+        <ul>
+          <li>Nie wszystkie rośliny są wyłącznie zielone — np. rośliny z dużą ilością karotenoidów (żółte/pomarańczowe) lub antocyjanów (czerwone/fioletowe).</li>
+          <li>W nocy lub przy braku światła fotosynteza nie zachodzi, ale chlorofil nadal nadaje zielony kolor, jeśli liść jest zdrowy.</li>
+          <li>Gdy trawa usycha, chlorofil zanika i uwidaczniają się żółte/tanowe barwy.</li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <div>Roman P.</div>
+        <div style="margin-top:8px;font-style:italic;color:var(--muted)">------</div>
+        <div style="margin-top:14px;font-weight:600;color:#1d4f2f">ZSO</div>
+      </footer>
+    </article>
+
+  </main>
+</body>
+</html>
